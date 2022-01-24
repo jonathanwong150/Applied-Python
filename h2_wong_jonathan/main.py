@@ -1,3 +1,9 @@
+# Name: Jonathan Wong
+# Email: Jzwong@usc.edu
+# Section: 31885
+# Spring 2022
+# Homework 2
+
 def main():
     cats_names = ('Cassandra', 'Sir Whiskington', 'Truck') # Lists of names for dictionary
     dogs_names = {'Barkey McBarkface', 'Leeloo Dallas', 'Taro'}
