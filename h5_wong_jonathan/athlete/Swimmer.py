@@ -4,8 +4,7 @@
 # Spring 2022
 # Homework 5
 
-from Athlete import Athlete
-
+from athlete.Athlete import Athlete
 
 # Create Swimmer class that inherits from Athlete
 class Swimmer(Athlete):

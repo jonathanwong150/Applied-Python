@@ -6,7 +6,6 @@
 
 from athlete.Athlete import Athlete
 
-
 # Create a Boxer class that inherits from Athlete
 class Boxer(Athlete):
     # Declare an initial boxer count
