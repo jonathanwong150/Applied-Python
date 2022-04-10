@@ -39,7 +39,7 @@ def main():
     tanh_x = np.arange(-1 * np.pi, np.pi, 0.1)
     tanh_y = np.tanh(tanh_x)
 
-    # Create a mapping from graph name to inputs
+    # Create arrays with plot names and inputs
     titles = ["sin(x)","cos(x)","tan(x)","sinh(x)","cosh(x)","tanh(x)"]
     inputs = [(sin_x,sin_y),(cos_x, cos_y),(tan_x, tan_y),(sinh_x, sinh_y),(cosh_x, cosh_y),(tanh_x, tanh_y)]
 
@@ -48,11 +48,14 @@ def main():
     index=0
     for index in range(len(titles)):
         set_graph(ax[i, j], titles[index], inputs[index])
+        # When we reach the end of the first row, move to second row
         if j==2:
             i=1
             j=0
+        # Increment j value otherwise
         else:
             j+=1
+    # Format correctly and show plot
     fig.tight_layout()
     plt.show()
 
